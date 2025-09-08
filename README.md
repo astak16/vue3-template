@@ -1,5 +1,21 @@
-# Vue 3 + TypeScript + Vite
+## 模版
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+这是一个基于 `Vite + Vue3 + TypeScript` 的 `mono-repo` 项目
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+环境：`node >= 20`，`pnpm >= 10`
+
+## 目录结构
+
+- `apps`: 存放各个子应用
+  - `app1`: 子应用
+- `packages`: 存放各个子包
+  - `shared`: 公共组件库
+- `dist`: 打包输出目录
+
+## 开发
+
+通过 `.env` 配置路由前缀
+
+- `pnpm dev:app1` 启动 `app1` 应用
+- `pnpm build:app1` 打包 `app1` 应用
+- `pnpm build` 打包所有应用
