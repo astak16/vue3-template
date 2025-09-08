@@ -1,0 +1,21 @@
+{
+  "name": "app1",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vue-tsc -b --noEmit && vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "preDependencies": {
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "vue-tsc": "^1.0.0",
+    "sass": "^1.92.1"
+  },
+  "dependencies": {}
+}
