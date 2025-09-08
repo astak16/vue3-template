@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev:app1": "pnpm -C apps/app1 dev",
-    "build": "vue-tsc -b && vite build",
+    "build:app1": "rimraf dist/app1 && pnpm -C apps/app1 build",
+    "build": "pnpm build:app1",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -18,6 +19,7 @@
     "@vitejs/plugin-vue-jsx": "^5.1.1",
     "@vue/tsconfig": "^0.7.0",
     "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
     "sass": "^1.92.1",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
