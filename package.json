@@ -1,12 +1,12 @@
 {
-  "name": "vue3-h5",
+  "name": "vue3-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev:app1": "pnpm -C apps/app1 dev",
-    "build:app1": "rimraf dist/app1 && pnpm -C apps/app1 build",
-    "build": "pnpm build:app1",
+    "dev:h5": "pnpm -C apps/h5 dev",
+    "build:h5": "rimraf dist/h5 && pnpm -C apps/h5 build",
+    "build": "pnpm build:h5",
     "preview": "vite preview"
   },
   "dependencies": {

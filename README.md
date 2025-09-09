@@ -7,7 +7,7 @@
 ## 目录结构
 
 - `apps`: 存放各个子应用
-  - `app1`: 子应用
+  - `h5`: 子应用
 - `packages`: 存放各个子包
   - `shared`: 公共组件库
 - `dist`: 打包输出目录
@@ -16,8 +16,8 @@
 
 通过 `.env` 配置路由前缀
 
-- `pnpm dev:app1` 启动 `app1` 应用
-- `pnpm build:app1` 打包 `app1` 应用
+- `pnpm dev:h5` 启动 `h5` 应用
+- `pnpm build:h5` 打包 `h5` 应用
 - `pnpm build` 打包所有应用
 
 ##
